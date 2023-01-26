@@ -129,8 +129,8 @@ function buildCharts(sample) {
         { range: [0,2],color: "red"},
         { range: [2,4],color:"orange"},
         { range: [4,6],color:"yellow"},
-        { range: [6,8],color:"green"},
-        { range: [8,10],color:"blue"}],
+        { range: [6,8],color:"lime"},
+        { range: [8,10],color:"green"}],
         bar: {color: "black"}
       }
     }];
