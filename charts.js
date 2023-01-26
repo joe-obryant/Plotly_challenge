@@ -61,15 +61,15 @@ function buildCharts(sample) {
     console.log(data);
 
     // Deliverable 1: 3. Create a variable that holds the samples array. 
-    var ourSamples = data.samples; 
+    var samplesArray = data.samples; 
     // Deliverable 1: 4. Create a variable that filters the samples for the object with the desired sample number.
-    var sampleArray = ourSamples.filter(sampleObj => sampleObj.id == sample);
+    var sampleNumber = samplesArray.filter(sampleObj => sampleObj.id == sample);
     // Deliverable 3: 1. Create a variable that filters the metadata array for the object with the desired sample number.
-    resultArray = data.metadata.filter(metaObj => metaObj.id == sample);
+    var resultArray = data.metadata.filter(metaObj => metaObj.id == sample);
     // Deliverable 1: 5. Create a variable that holds the first sample in the array.
-    var sampleResult = sampleArray[0];
+    var sampleResult = sampleNumber[0];
     // Deliverable 3: 2. Create a variable that holds the first sample in the metadata array.
-    result = resultArray[0];
+    var result = resultArray[0];
     // Deliverable 1: 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var sampleOTUids = sampleResult.otu_ids;
     var sampleOTUlabels = sampleResult.otu_labels;
